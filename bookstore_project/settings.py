@@ -155,7 +155,7 @@ AUTHENTICATION_BACKENDS = (
         'allauth.account.auth_backends.AuthenticationBackend',
         )
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 LOGIN_REDIRECT_URL = 'home'
 ACCOUNT_LOGOUT_REDIRECT = 'home'
@@ -164,3 +164,13 @@ ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_UNIQUE_EMAIL = True
+
+# email settings
+DEFAULT_FROM_EMAIL = 'admin@lookupluck.com'
+
+# gmailアカウントを利用してメールを送信
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'travelleaflet@gmail.com'
+EMAIL_HOST_PASSWORD = 'rkmyevczfwakjyek'
+EMAIL_USE_TLS = True
