@@ -175,3 +175,7 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'travelleaflet@gmail.com'
 EMAIL_HOST_PASSWORD = 'rkmyevczfwakjyek'
 EMAIL_USE_TLS = True
+
+# Media files
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
