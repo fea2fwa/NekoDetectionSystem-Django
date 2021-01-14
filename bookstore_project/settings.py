@@ -25,7 +25,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = int(os.environ.get('DEBUG',default=0))
 
-ALLOWED_HOSTS = ['160.251.17.38']
+ALLOWED_HOSTS = ['<Host IP>']
 
 
 # Application definition
@@ -171,13 +171,13 @@ ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_UNIQUE_EMAIL = True
 
 # email settings
-DEFAULT_FROM_EMAIL = 'admin@lookupluck.com'
+DEFAULT_FROM_EMAIL = '<admin email address>'
 
 # gmailアカウントを利用してメールを送信
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'travelleaflet@gmail.com'
-EMAIL_HOST_PASSWORD = 'rkmyevczfwakjyek'
+EMAIL_HOST_USER = '<email address>'
+EMAIL_HOST_PASSWORD = '<password key>'
 EMAIL_USE_TLS = True
 
 # Media files
