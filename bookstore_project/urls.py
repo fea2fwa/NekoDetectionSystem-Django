@@ -17,6 +17,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path,include
+from rest_framework.authtoken.views import obtain_auth_token
 
 urlpatterns = [
     # Django admin
@@ -28,4 +29,7 @@ urlpatterns = [
     # Local apps
     path('',include('pages.urls')),
     path('books/', include('books.urls')),
+    path('cats/', include('cats.urls')),
+    path('api/',include('api.urls')),
+    path('auth/',obtain_auth_token),
 ]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
