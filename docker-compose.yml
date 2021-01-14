@@ -5,7 +5,7 @@ services:
                 build: .
                 command: python /code/manage.py runserver 0.0.0.0:8000
                 environment:
-                        - SECRET_KEY=fc4lv*(d)k6g%q&ai@=cpx7^yj55ijp)&pt!n)8*g30pun@uao
+                        - SECRET_KEY=<Secret key of django>
                         - DEBUG=1
                 volumes:
                         - .:/code
